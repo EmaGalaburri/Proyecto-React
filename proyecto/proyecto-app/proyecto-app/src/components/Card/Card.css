@@ -1,0 +1,17 @@
+.primerDiv{
+    background-color: #223142;
+    margin: 5px;
+    max-width: 320px;
+    border-radius: 10px;
+}
+img{
+    margin: 10px;
+    border-radius: 10px #344D67;
+
+    /* box-shadow: 10px 10px 10px gray; */
+}
+
+button{
+    background-color: #6ECCAF;
+    border-radius: 5px;
+}
