@@ -1,0 +1,18 @@
+h2{
+    color: #223142;
+}
+h3{
+    color: #223142;
+}
+.main-contact{
+    height: 100vh;
+    display: block;
+}
+.main-contact-div{
+    background-color: rgba(92, 117, 146,0.9);
+}
+
+.btn{
+    background-color: #344D67;
+    color: white;
+}

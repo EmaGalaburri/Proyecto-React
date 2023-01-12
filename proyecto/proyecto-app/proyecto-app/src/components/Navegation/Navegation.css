@@ -1,6 +1,35 @@
-ul{
-    list-style-type: none;
+nav{
+    width: 100%;
+    background-color: #344d67;
 }
-header{
-    padding: 20px;
+
+.container{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name{
+    text-decoration: none;
+    color: #6ECCAF;
+    background-color: #344d67 ;
+    font-size: 25px;
+}
+.name:hover{
+    color: #6ECCAF;
+}
+
+.title{
+    white-space: nowrap;
+    text-decoration: none;
+    color: #6ECCAF;
+    background-color: #344d67 ;
+    border-style: none;
+}
+
+.title:hover{
+    color: #344d67;
+    background-color: #6ECCAF;
+
 }

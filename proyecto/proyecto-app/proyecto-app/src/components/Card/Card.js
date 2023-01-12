@@ -4,28 +4,17 @@ import "./Card.css"
 export default function Card({info}) {
     const [ocultar,setOcultar]=useState(true);
     const mostrar =()=>{
-        console.log(info) // objeto con la info del personaje
-        setOcultar(!ocultar) // cambio de verdadero a falso, nos ayuda a mostrar el contenedor de info
+        console.log(info)
+        setOcultar(!ocultar)
     }
 
     const ocultarInfo=()=>{
-        setOcultar(true) // nos ayuda a ocultar el contenedor de info
+        setOcultar(true)
     }
     
     return (
-    //     <div className="card" style="width: 18rem;">
-    //         <img src={info.image} className="card-img-top" alt={info.image}/>
-    //         <div className="card-body">
-    //         <h5 className="card-title">{info.name}</h5>
-    //         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    //         <a href={mostrar} className="btn btn-primary">Now More..</a>
-    //         {/* <button onClick={mostrar}>Now More..</button> */}
-    //         </div>
-    //     </div> 
-    // )}
-
-        <div className="bg-primary my-5 d-flex">
-            <div>
+        <div id="card-container" className="my-5 d-flex card-container">
+            <div className="card">
                 <img src={info.image} alt=""/>
                 <h2>{info.name}</h2>
                 <button onClick={mostrar} >Now More..</button>
@@ -41,13 +30,5 @@ export default function Card({info}) {
                 </ul>
             </div>:""}
         </div>
-
-        // <div class="primerDiv">
-        //     <img src={info.image} alt=""/>
-        //     <div class="segundoDiv">
-        //         <h2>{info.name}</h2>
-        //         <button onClick={mostrar}>Now More..</button>
-        //     </div>
-        // </div>
     )
 }

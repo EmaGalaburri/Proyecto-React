@@ -14,7 +14,7 @@ export default function Characters() {
         if(e.target.checked){
             let datoFiltro = e.target.value;
             if(datoFiltro === "Alive" || datoFiltro === "Dead"){
-                let resultado = datos.filter((ch)=> ch.status === datoFiltro) // Este filter genera un nuevo array con solo los elementos que cumplen la condicion    
+                let resultado = datos.filter((ch)=> ch.status === datoFiltro)     
                 setDatos(resultado)
             }
             if(datoFiltro === "Female" || datoFiltro === "Male"){
@@ -32,8 +32,8 @@ export default function Characters() {
 
     const traerInfo=async()=>{
 
-        let info = await fetch("https://rickandmortyapi.com/api/character") // busca y trae la info de la API
-                    .then(respuesta => respuesta.json()) // respuesta.jason() --> transforma la info en JSON
+        let info = await fetch("https://rickandmortyapi.com/api/character")
+                    .then(respuesta => respuesta.json())
                     .catch(error => console.log("Hay un error!! " +error))
         return info
     }
@@ -55,7 +55,7 @@ export default function Characters() {
     return (
         <Fragment>
             <Navegation/>
-            <section className="bg-success d-flex p-2">
+            <section className="d-flex p-2 ">
                 <h2>Filters</h2>
                 <Filters nombreFiltro="Alive" datoFiltro="Alive" mostrarValor={mostrarValor}/>
                 <Filters nombreFiltro="Dead" datoFiltro="Dead" mostrarValor={mostrarValor}/>

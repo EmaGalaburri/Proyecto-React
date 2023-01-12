@@ -2,22 +2,29 @@ import ListItemHome from "../ListItemHome/ListItemHome";
 import "./Home.css";
 
 export default function Home (){
-    // Puedo crear un objeto
-    // let informacion ={
-    //     email: "emagala@gmail.com",
-    //     telefono: 11234567
-    //}
     return(
-        <header className="bg-light">
-            <div>
-            <h1>Proyect - Rick & Morty</h1>
-                <nav className="navbar">
-                    <ul className="d-flex justify-content-between">
-                        <ListItemHome dato="Characters" infoPath="/characters"/>
-                        <ListItemHome dato="Contact" infoPath="/contact"/>
-                    </ul>
-                </nav>
+        <header className='main-container'>
+            <div className='main'>  
+                    <h1>Proyect - Rick & Morty</h1>
+                    <div className='bt-container'>
+                        <ul className="nav nav-pills justify-content-center">
+                            <ListItemHome className="home-bt" dato="Characters" infoPath="/characters"/>
+                            <ListItemHome className="home-bt" dato="Contact" infoPath="/contact"/>
+                        </ul>
+                    </div>
             </div>
         </header>
     )
 }
+
+// <div className='main-container'>
+//             <header className='main'>
+//                 <h1>Proyecto - Rick & Morty</h1>
+
+//                 <div className='bt-container'>
+//                 <button className='home-bt'>Characters</button>
+//                 <button className='home-bt'>Contact</button>
+//                 </div>
+//             </header>
+
+//         </div>
