@@ -1,6 +1,3 @@
-h2{
-    color: #223142;
-}
 h3{
     color: #223142;
 }
@@ -15,4 +12,7 @@ h3{
 .btn{
     background-color: #344D67;
     color: white;
+}
+.h-dos{
+    color: #223142;
 }

@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import Navegation from "../Navegation/Navegation"
 import Filters from "../Filters/Filters"
 import SectionCards from "../SectionCards/SectionCards"
+import "./Characters.css"
 
 
 export default function Characters() {
@@ -55,7 +56,7 @@ export default function Characters() {
     return (
         <Fragment>
             <Navegation/>
-            <section className="d-flex p-2 ">
+            <section className="d-flex p-2">
                 <h2>Filters</h2>
                 <Filters nombreFiltro="Alive" datoFiltro="Alive" mostrarValor={mostrarValor}/>
                 <Filters nombreFiltro="Dead" datoFiltro="Dead" mostrarValor={mostrarValor}/>

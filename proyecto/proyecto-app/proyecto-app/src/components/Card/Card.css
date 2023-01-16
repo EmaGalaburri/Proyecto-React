@@ -29,6 +29,15 @@ button{
     padding: 0;
     border: 1px;
 }
+.more-info{
+    display: flex;
+}
+.p-5{
+    padding: 3rem;
+}
+.list-group-item{
+    color: whitesmoke;
+}
 
 
 

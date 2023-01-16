@@ -10,7 +10,7 @@ export default function Contact(){
             <main className="container-fluid main-contact">
                 <div className="main-contact-div d-flex flex-column justify-content-center align-item-center m-auto mt-5 w-75 h-75">
                     <section>
-                        <h2>Contact</h2>
+                        <h2 className="h-dos">Contact</h2>
                         <h3>Leave us your information so we can contact you</h3>
                         <form className="row g-3">
                             <div className="col-md-6">
